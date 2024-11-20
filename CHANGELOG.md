@@ -1,6 +1,23 @@
 # Changelog
 
 
+## v0.1.0
+
+[compare changes](https://github.com/lean-stack/local-server/compare/v0.0.1...v0.1.0)
+
+### 🚀 Enhancements
+
+- Expose a db singleton. ([25f1685](https://github.com/lean-stack/local-server/commit/25f1685))
+- Add get bookmarks route. ([e747945](https://github.com/lean-stack/local-server/commit/e747945))
+
+### 🏡 Chore
+
+- Add Prisma ORM and the initial bookmarks table. ([cb5810a](https://github.com/lean-stack/local-server/commit/cb5810a))
+
+### ❤️ Contributors
+
+- Micha Buchholz <mail@lean-stack.rocks>
+
 ## v0.0.1
 
 
