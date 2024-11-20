@@ -3,3 +3,7 @@ node_modules/
 
 # Environment / Sensible data
 .env
+
+# Prisma DB
+*.db
+*.db-journal
