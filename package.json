@@ -12,8 +12,12 @@
     "url": "https://github.com/lean-stack/local-server.git"
   },
   "type": "module",
-  "scripts": {},
-  "dependencies": {},
+  "scripts": {
+    "dev": "node --watch --env-file=.env server"
+  },
+  "dependencies": {
+    "express": "^5.0.1"
+  },
   "devDependencies": {},
   "engines": {
     "node": ">=22 <23"
