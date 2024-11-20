@@ -1,0 +1,21 @@
+{
+  "name": "local-server",
+  "version": "0.0.0",
+  "author": {
+    "name": "Micha Buchholz",
+    "email": "mail@lean-stack.rocks",
+    "url": "https://lean-stack.rocks"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lean-stack/local-server.git"
+  },
+  "type": "module",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=22 <23"
+  }
+}
