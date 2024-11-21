@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v0.1.1
+
+[compare changes](https://github.com/lean-stack/local-server/compare/v0.1.0...v0.1.1)
+
+### 🚀 Enhancements
+
+- Update bookmark columns - added timestamp columns. ([1f234c3](https://github.com/lean-stack/local-server/commit/1f234c3))
+
+### 🏡 Chore
+
+- Configure testing. ([e8d43b8](https://github.com/lean-stack/local-server/commit/e8d43b8))
+
+### ❤️ Contributors
+
+- Micha Alt ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.1.0
 
 [compare changes](https://github.com/lean-stack/local-server/compare/v0.0.1...v0.1.0)
