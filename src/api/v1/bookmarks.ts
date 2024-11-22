@@ -30,5 +30,9 @@ router.put('/:id', async (req, res) => {
   res.json(data);
 });
 
+router.delete('/:id', async (req, res) => {
+  await db.bookmark.delete({ where: { id: req.params.id }});
+  res.status(204).end();
+});
 
 export { router as bookmarksRouter };

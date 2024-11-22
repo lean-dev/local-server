@@ -62,3 +62,11 @@ test('can update a bookmark', async() => {
     const response = await request(app).put(`/api/v1/bookmarks/${createdBookmark.id}`).send(bookmarkWithoutDescription).expect(200);
     expect(response.body).toEqual({ ...createdBookmark, ...bookmarkWithoutDescription, description: null });
 });
+
+test('can delete a bookmark', async() => {
+  let response = await request(app).delete(`/api/v1/bookmarks/${createdBookmark.id}`).expect(204);
+  expect(response.body).toEqual({});
+
+  response = await request(app).get('/api/v1/bookmarks').expect(200);
+  expect(response.body).toHaveLength(0);
+});
