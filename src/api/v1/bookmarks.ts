@@ -8,6 +8,11 @@ router.get('/', async (req, res) => {
   res.json(data);
 });
 
+router.get('/:id', async (req, res) => {
+  const data = await db.bookmark.findFirst({ where: { id: req.params.id }});
+  res.json(data);
+});
+
 router.post('/', async (req, res) => {
   const data = await db.bookmark.create({ data: req.body });
   res.status(201).json(data);

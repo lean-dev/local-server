@@ -36,6 +36,11 @@ test('can create bookmarks', async () => {
 });
 
 test('can get created bookmarks', async () => {
-  const response = await request(app).get('/api/v1/bookmarks');
+  const response = await request(app).get('/api/v1/bookmarks').expect(200);
   expect(response.body).toContainEqual(createdBookmark);
 });
+
+test('can get single bookmark by id', async () => {
+  const response = await request(app).get(`/api/v1/bookmarks/${createdBookmark.id}`).expect(200);
+  expect(response.body).toEqual(createdBookmark);
+})
