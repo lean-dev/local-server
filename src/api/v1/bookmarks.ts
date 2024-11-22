@@ -1,5 +1,6 @@
 import { Router } from 'express';
 import { db } from '../../utils/db';
+import type { Prisma } from '@prisma/client';
 
 const router = Router();
 
@@ -17,5 +18,17 @@ router.post('/', async (req, res) => {
   const data = await db.bookmark.create({ data: req.body });
   res.status(201).json(data);
 });
+
+router.patch('/:id', async (req, res) => {
+  const data = await db.bookmark.update({ where: { id: req.params.id }, data: req.body});
+  res.json(data);
+});
+
+router.put('/:id', async (req, res) => {
+  const updatedBookmark: Prisma.BookmarkUpdateInput = { title: undefined, url: undefined, description: null, ...req.body };
+  const data = await db.bookmark.update({ where: { id: req.params.id }, data: updatedBookmark});
+  res.json(data);
+});
+
 
 export { router as bookmarksRouter };

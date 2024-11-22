@@ -44,3 +44,21 @@ test('can get single bookmark by id', async () => {
   const response = await request(app).get(`/api/v1/bookmarks/${createdBookmark.id}`).expect(200);
   expect(response.body).toEqual(createdBookmark);
 })
+
+test('can patch a bookmark', async() => {
+  const description = `
+React is the library for web and native user interfaces. Build user interfaces out
+of individual pieces called components written in JavaScript. React is designed
+to let you seamlessly combine components written by independent people, teams,
+and organizations.
+  `.trim();
+
+  const response = await request(app).patch(`/api/v1/bookmarks/${createdBookmark.id}`).send({description}).expect(200);
+  expect(response.body).toEqual({ ...createdBookmark, description });
+});
+
+test('can update a bookmark', async() => {
+    const bookmarkWithoutDescription = { title: 'Quick Start - React', url: 'https://react.dev/learn' };
+    const response = await request(app).put(`/api/v1/bookmarks/${createdBookmark.id}`).send(bookmarkWithoutDescription).expect(200);
+    expect(response.body).toEqual({ ...createdBookmark, ...bookmarkWithoutDescription, description: null });
+});
