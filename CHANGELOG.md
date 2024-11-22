@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v0.2.0
+
+[compare changes](https://github.com/lean-stack/local-server/compare/v0.1.2...v0.2.0)
+
+### 🚀 Enhancements
+
+- Implement get bookmark by id ([3afb4c4](https://github.com/lean-stack/local-server/commit/3afb4c4))
+- Implement patch and update methods for bookmarks. ([8c3896c](https://github.com/lean-stack/local-server/commit/8c3896c))
+- Implement deleting a bookmark. ([1ed289d](https://github.com/lean-stack/local-server/commit/1ed289d))
+
+### ❤️ Contributors
+
+- Micha Alt ([@lean-dev](http://github.com/lean-dev))
+
 ## v0.1.2
 
 [compare changes](https://github.com/lean-stack/local-server/compare/v0.1.1...v0.1.2)
