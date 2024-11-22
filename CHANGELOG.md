@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.1.2
+
+[compare changes](https://github.com/lean-stack/local-server/compare/v0.1.1...v0.1.2)
+
+### 🚀 Enhancements
+
+- Add create bookmark route. ([16b9a64](https://github.com/lean-stack/local-server/commit/16b9a64))
+
+### ❤️ Contributors
+
+- Micha Buchholz <mail@lean-stack.rocks>
+
 ## v0.1.1
 
 [compare changes](https://github.com/lean-stack/local-server/compare/v0.1.0...v0.1.1)
