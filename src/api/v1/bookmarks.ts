@@ -8,4 +8,9 @@ router.get('/', async (req, res) => {
   res.json(data);
 });
 
+router.post('/', async (req, res) => {
+  const data = await db.bookmark.create({ data: req.body });
+  res.status(201).json(data);
+});
+
 export { router as bookmarksRouter };
